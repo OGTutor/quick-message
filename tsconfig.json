@@ -32,7 +32,8 @@
 			"@/utils/*": ["utils/*"],
 			"@/store/*": ["store/*"],
 			"@/assets/*": ["assets/*"],
-			"@/libs/*": ["libs/*"]
+			"@/libs/*": ["libs/*"],
+			"@/actions/*": ["actions/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
