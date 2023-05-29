@@ -15,12 +15,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>
-				<AuthContext>
-					<ToasterContext />
-					{children}
-				</AuthContext>
-			</body>
+			<AuthContext>
+				<ToasterContext />
+				<div>{children}</div>
+			</AuthContext>
 		</html>
 	);
 }
