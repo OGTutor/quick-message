@@ -24,7 +24,7 @@ const ConversationBox: FC<ConversationBoxProps> = ({ data, selected }) => {
 
 	const handleClick = useCallback(() => {
 		router.push(`/conversations/${data.id}`);
-	}, [data.id, router]);
+	}, [data, router]);
 
 	const lastMessage = useMemo(() => {
 		const messages = data.messages || [];
@@ -61,7 +61,7 @@ const ConversationBox: FC<ConversationBoxProps> = ({ data, selected }) => {
 			onClick={handleClick}
 			className={clsx(
 				`w-full relative flex items-center space-x-3 hover:bg-neutral-100 
-				rounded-lg transition cursor-pointer p-3`,
+				rounded-lg transition cursor-pointer p-3 z-50`,
 				selected ? 'bg-neutral-100' : 'bg-white'
 			)}
 		>
