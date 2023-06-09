@@ -8,7 +8,7 @@ interface InputProps {
 	label: string;
 	id: string;
 	type?: string;
-	required?: string;
+	required?: boolean;
 	register: UseFormRegister<FieldValues>;
 	errors: FieldErrors;
 	disabled?: boolean;
