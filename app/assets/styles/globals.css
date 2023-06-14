@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	src: url('../fonts/assassin.woff2') format('woff2');
-	font-family: 'assassin-st';
-	font-weight: 700;
-	font-style: italic;
-}
-
 html,
 body,
 :root {
 	height: 100%;
-	font-family: 'assassin-st', sans-serif;
 }
